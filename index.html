@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PlanToDo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css" />
+    <style>
+        :root {
+            --main-color: rgba(239, 151, 138, 1);
+        }
+
+        .iconfont {
+            font-size: 1em;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--main-color);
+        }
+
+        .pagenote {
+            position: relative;
+            font-size: 36px;
+            will-change: box-shadow;
+        }
+
+        .pagenote::after {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 1px;
+            background-color: var(--main-color);
+            animation: highlight 10s ease-in-out infinite;
+        }
+
+        @keyframes highlight {
+            0% {
+                width: 0%;
+            }
+
+            50% {
+                width: 100%;
+            }
+
+            100% {
+                width: 0;
+            }
+        }
+
+        .bg-light {
+            background-color: #f8f9fa;
+        }
+
+        .btn-secondary {
+            color: #fff;
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+
+        .btn-secondary:hover {
+            color: #fff;
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #3498DB;
+            border-color: #3498DB;
+        }
+
+        .btn-primary:hover {
+            color: #fff;
+            background-color: #2979FF;
+            border-color: #2979FF;
+        }
+
+
+
+
+        .react-toast-notifications__container {
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            z-index: 9999;
+        }
+
+        .btn-success {
+            color: #fff;
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+
+        .btn-success:hover {
+            color: #fff;
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+
+        /* 隐藏默认滚动条 */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* 自定义滚动条样式 */
+        ::-webkit-scrollbar-track {
+            background-color: rgba(239, 151, 138, 0.2);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(239, 151, 138, 0.5);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(239, 151, 138, 0.7);
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.8);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .icon-circle {
+            animation: pulse 2s 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-light py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="mb-0">
+                <span style="color: var(--main-color)">PlanToDo</span>
+            </h1>
+            <nav>
+                <ul class="list-unstyled mb-0 d-flex">
+                    <li class="mx-3"><a href="/me">我们的故事</a></li>
+                    <li class="mx-3">
+                        <a href="https://www.bilibili.com/video/BV1bi4y1L79R">使用介绍</a>
+                    </li>
+                    <li class="mx-3"><a href="/pro-plan">交流入群</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-12 col-lg-6 text-center p-5">
+                <h2 class="mt-5">
+                    PlanToDo = 任务管理 + 番茄钟 + ... <br />
+                </h2>
+
+                <div class="mt-5 ">
+                    <div></div>
+                    <div>如何更好更快的完成一件事是PlanToDo一直思考的事！</div>
+                </div>
+
+                <div class="mt-5">
+                    <a href="/windows-download" class="btn btn-secondary me-3">Windows 版本下载</a>
+                    <a href="/macos-download" class="btn btn-primary me-3 mx-lg-4">MacOS 版本下载</a>
+                    <a href="/linux-download" class="btn btn-success me-3 ">Linux 版本下载</a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 mt-5 mt-lg-0 d-flex justify-content-center">
+
+
+                <div style="width: 80%; height: 0; padding-bottom: 80%; position: relative;">
+                    <div class="icon-circle"
+                        style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: 60%; background-color: rgba(239, 151, 138, 1); display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                        <span
+                            style="color: #fff; font-size: 60px; font-weight: bold; text-align: center;">PlanToDo</span>
+                        <span style="color: #fff; font-size: 20px; margin-top: 10px;">for a better life</span>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </main>
+    <!-- <footer class="bg-light py-3 mt-5">
+        <div class="container">
+            <p class="text-center mb-0">版权所有 &copy; 2023 PAGENOTE</p>
+        </div>
+    </footer> -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
+    <script>
+        var el = document.getElementById("refresh");
+        if (el) {
+            el.onclick = function () {
+                setTimeout(function () {
+                    window.location.reload();
+                }, 1000);
+                navigator.serviceWorker.controller &&
+                    navigator.serviceWorker.controller.postMessage("clean_cache");
+            };
+        }
+    </script>
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-LBE869KVBS"></script>
+    <div class="react-toast-notifications__container css-11nijy0"></div>
+</body>
+
+</html>
