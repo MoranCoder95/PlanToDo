@@ -21,9 +21,11 @@ PlanToDo=任务代办+番茄钟+...
 
 ## 下载地址
 
+[PlanToDo](https://github.com/MoranCoder95/PlanToDo/releases)
 
 
 ## 功能及使用介绍
+
 
 
 
