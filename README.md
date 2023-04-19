@@ -6,11 +6,11 @@ PlanToDo=任务代办+番茄钟+...
 
 ## Features
 
-📦 任务设置
+📦 任务新建修改完成
 
-🎯 番茄钟提醒
+🎯 定时番茄钟提醒
 
-🌱 定时锁屏
+🌱 定时锁屏锁屏
 
 💪 
 
@@ -24,7 +24,7 @@ PlanToDo=任务代办+番茄钟+...
 [PlanToDo](https://github.com/MoranCoder95/PlanToDo/releases)
 
 
-## 功能及使用介绍
+## 开发介绍
 
 
 
@@ -44,4 +44,16 @@ PlanToDo=任务代办+番茄钟+...
 [xhznl-todo-list](https://github.com/xiajingren/xhznl-todo-list)
 
 [electron-vite-vue](https://github.com/electron-vite/electron-vite-vue)
+
+
+## 支持项目
+💕 如果觉得项目不错，或者已经在使用了，希望你可以帮我点个 ⭐ Star，这将是对我们极大的鼓励与支持。
+
+![image](https://user-images.githubusercontent.com/28349614/233222493-bed0e455-8193-4b32-8d98-e8a73e699830.png)
+
+
+
+
+
+
 
